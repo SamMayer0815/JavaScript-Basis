@@ -1,7 +1,8 @@
 <!DOCTYPE >
 <head>
   <script lang="javascript">
-   
+
+   let gemiddeldHoog = ""
   //sarah
 
   let cijfer1 = 7.7
@@ -26,10 +27,18 @@
 
   let gemiddeld2 = cijfer2 / 5
 
-  if(gemiddeld >= gemiddeld2){
-    console.log("sarah")
-  }else{
-    console.log("sofie")
+  if(gemiddeld >= 7){
+   gemiddeldHoog = " Goed gedaan, Hoger dan een 7!"
+   }if(gemiddeld2 >= 7){
+   gemiddeldHoog = " Goed gedaan, Hoger dan een 7!"
   }
+
+  if(gemiddeld >= gemiddeld2){
+    console.log("sarah" + gemiddeldHoog)
+  }else{
+    console.log("sofie" + gemiddeldHoog)
+  }
+
+  
   </script>
 </head>
