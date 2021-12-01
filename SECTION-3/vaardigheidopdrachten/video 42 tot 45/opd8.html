@@ -1,0 +1,52 @@
+<!DOCTYPE >
+<head>
+<script lang="javascript">
+
+const objectStudent = {
+  naamStudent: 'Sam',
+  leeftijdStudent: 18,
+  geboortjejaarStudent: '2003',
+  baanStudent: 'vakken vuller',
+  woonplaatsStudent: 'Almere',
+  woonplaatsVanStudent: function(){
+  if(objectStudent.woonplaatsStudent == "Almere"){
+  return `${this.naamStudent} woont in ${this.woonplaatsStudent}`
+}
+  }
+
+}
+
+const objectDocent = {
+  naamDocent: 'Jan',
+  leeftijdDocent: 31,
+  geboortjejaarDocent: '1990',
+  baandDocent: 'docent',
+  woonplaatsDocent: 'Drenten',
+  woonplaatsVanDocent: function(){
+  if(objectDocent.woonplaatsDocent == "Almere"){
+  return `${this.naamDocent} woont in ${this.woonplaatsDocent}`
+}
+  }
+
+}
+
+leeftijdOudste = function(){
+  if(objectStudent.leeftijdStudent > objectDocent.leeftijdDocent){
+    console.log("De oudste persoon is " + objectStudent.naamStudent)
+  }else{
+    console.log("De oudste persoon is " + objectDocent.naamDocent)
+  }
+
+}
+leeftijd = function(){
+  return `De leeftijd van student is ${objectStudent.leeftijdStudent} en de leeftijd van de docent is ${objectDocent.leeftijdDocent}`
+}
+
+console.log(objectStudent.woonplaatsVanStudent())
+console.log(objectDocent.woonplaatsVanDocent())
+console.log(leeftijdOudste())
+console.log(leeftijd())
+
+
+</script>
+</head>

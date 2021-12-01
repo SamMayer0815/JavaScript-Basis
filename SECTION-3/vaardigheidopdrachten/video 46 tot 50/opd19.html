@@ -1,0 +1,21 @@
+<!DOCTYPE >
+<head>
+<script lang="javascript">
+
+const birthYear = [1988, 1982, 1988, 1922, 1990, 2000, 2020, 2033, 2001]
+
+const year = new Date().getFullYear();
+var age = []
+
+for(var i = 0; i < birthYear.length;i++){
+  age[i] =   year - birthYear[i]
+  if(age[i] < 0){
+    age[i] = "Kan niet"
+  }
+}
+
+
+
+console.log(age)
+</script>
+</head>
