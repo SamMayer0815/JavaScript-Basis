@@ -1,0 +1,42 @@
+.grid-container{
+  height: 300px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30%;
+}
+
+.grid-container_item{
+ justify-content: center;
+ align-items: center;
+ display: flex;
+}
+
+.score-board{
+background-color: beige;
+width: 100%;
+height: 100px;
+}
+
+.num{
+ background-color:violet ;
+ width: 200px;
+ height: 150px;
+
+}
+
+.operator{
+  background-color: lightcoral;
+  width: 200px;
+  height: 150px;
+}
+
+.answer-box{
+background-color: purple;
+width: 100%;
+height: 250px;
+}
+
+.button-answer{
+  margin-left: 20px;
+}
