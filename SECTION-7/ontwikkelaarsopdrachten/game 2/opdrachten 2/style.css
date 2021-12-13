@@ -1,0 +1,85 @@
+*{
+  font-size: 60px;
+}
+
+.score{
+  background-color: aqua;
+  width: 800px;
+  height: 150px;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+#grid-item-1{
+  background-color: purple;
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+#grid-item-2{
+  background-color:plum ;
+}
+
+#grid-item-3{
+  background-color: lightgreen;
+  grid-row: span 3;
+}
+
+#grid-item-4{
+  background-color: lightcoral;
+  grid-row: span 2;
+}
+
+#grid-item-5{
+  background-color: darkcyan
+}
+
+#grid-item-6{
+  background-color: pink;
+  grid-column: span 3;
+}
+
+#grid-item-7{
+  background-color:burlywood ;
+  grid-row: span 2;
+  
+}
+
+#grid-item-8{
+  background-color: greenyellow;
+  grid-column: span 4;
+}
+.grid-items{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons{
+ background-color: aqua;
+  width: 800px;
+  height: 150px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button{
+  font-size: 60px;
+  margin-left: 20px;
+}

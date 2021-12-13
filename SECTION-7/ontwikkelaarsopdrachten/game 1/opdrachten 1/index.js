@@ -8,7 +8,6 @@ let minuut = 0;
 let foutTotaal = 0;
 let game = false
 
-
 randomOperator = function (){ // getallen / operator functie
 
   randomNum = Math.floor(Math.random() * opp.length)
@@ -44,7 +43,6 @@ randomOperator = function (){ // getallen / operator functie
 
 }
 
-
 document.querySelector("body").onload = randomOperator(); // eerste keer laden
 document.getElementsByClassName("input-answer")[0].onclick = function(){
 document.querySelector(".input-answer").style.backgroundColor = "white"}
@@ -65,7 +63,7 @@ document.querySelector(".button-answer").onclick = function(){
 
  document.getElementsByClassName("input-answer")[0].value = ""
 
- if(puntenTotaal == "1"){    // check of game klaar is
+ if(puntenTotaal == "3"){    // check of game klaar is
  game = false
    document.getElementsByClassName("score-board")[0].innerHTML = "Score 0"
    modal.style.display = "block";
@@ -103,8 +101,6 @@ let modal = document.querySelector("#myModal");
       score = 0;
       mistake=0;
     };
-
-    
 
 setInterval(function(){
   seconden++
