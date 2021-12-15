@@ -105,6 +105,6 @@ let modal = document.querySelector("#myModal");
 setInterval(function(){
   seconden++
   if(seconden == 60){
-    minuut++
+    minuut++  
     seconden = 0;
   }},1000);

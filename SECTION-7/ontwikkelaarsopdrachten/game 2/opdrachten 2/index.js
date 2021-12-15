@@ -1,6 +1,6 @@
 let score = 0;
 let totaalPersoon = 0; 
-
+const arraySum = [0,0,0,0,0,0,0,0,0]
 
 
 randomNumbers = function(){
@@ -8,10 +8,11 @@ randomNumbers = function(){
   randomNum = Math.round(Math.random() * 49)+1
   document.getElementsByClassName("score")[0].innerHTML = randomNum;
 
-  for(let i = 1;i <= 8;i++){
+  for(let i = 0;i <= 7;i++){
     randomNum = Math.round(Math.random() * 14)+1
     gridItem = "grid-item-" + i;
-    document.getElementById(gridItem).innerHTML = randomNum;     // kiest random nummer
+    document.getElementById(gridItem).innerHTML = randomNum; 
+    arraySum[i] = randomNum     // kiest random nummer
   }                                                              
 }
 
@@ -41,3 +42,5 @@ document.getElementsByClassName("cant-be-done")[0].onclick = function(){
 
 
 document.querySelector("body").onload = randomNumbers(); // eerste keer laden
+
+
