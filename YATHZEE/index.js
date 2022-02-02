@@ -103,7 +103,7 @@ document.addEventListener("click", function (event){
     reset()
   }
   for(i = 0;i <= 5;i++){// doet de punten van 4 dezelfde
-    if(event.target.id == "punten-8" && isRolling == true && pressed[7] == false && count[i] == 4){
+    if(event.target.id == "punten-8" && isRolling == true &&   pressed[7] == false && count[i] == 4){
       document.getElementById("punten-8").innerHTML = totaalVD5
       document.getElementById("punten-8").style.color = 'black';
       totaalDeel2 += totaalVD5
